@@ -10,7 +10,7 @@ header {
   justify-content: center;
   background-size: cover; 
   margin-bottom: 30px;
-  padding: 10%;
+  padding: 0 10% 10% 10%;
   color: #090A0B !important;
 }
 
