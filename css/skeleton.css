@@ -30,11 +30,12 @@ header p {
   text-align: center;
 }
 
-.down:hover {
+.down a:hover {
   cursor: pointer;
   /* background-color: #eee; */
   opacity: 0.8;
   font-weight: bold;
+  text-decoration: none;
 }
 
 /*
@@ -603,10 +604,57 @@ near the relevant code. For example, if you wanted to change the styles for butt
 on small devices, paste the mobile query code up in the buttons section and style it
 there.
 */
+/* Galaxy Fold  */
+@media screen and (height: 280px){
+  header h1 {
+    font-size: xx-large;
+    font-weight: bold;
+  }
 
-@media screen and (max-height: 420px) {
+  header p {
+    font-size: medium;
+  }
+
   .intro-name {
-    margin-top: 15%;
+    margin-top: -100px;
+  }
+}
+/* iPhone 5 landscape  */
+@media screen and (height: 320px) {
+  header h1 {
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  header p {
+    font-size: medium;
+  }
+
+  .intro-name {
+    margin-top: -100px;
+  }
+}
+
+/* Moto G4 landscape  */
+@media screen and (height: 360px) {
+  header h1 {
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  header p {
+    font-size: medium;
+  }
+
+  .intro-name {
+    margin-top: -100px;
+  }
+}
+
+/* Specifically iPhone X in landscape  */
+@media screen and (height: 375px) {
+  .intro-name {
+    margin-top: -100px
   }
 
   .down {
@@ -615,6 +663,35 @@ there.
 
   header p {
     font-size: inherit;
+  }
+
+}
+
+/* Pixel 2 landscape  */
+@media screen and (height: 411px){
+  header h1 {
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  header p {
+    font-size: medium;
+  }
+
+  .intro-name {
+    margin-top: -100px;
+  }
+}
+
+/* iPhone plus in landscape  */
+@media screen and (height: 414px){
+  .intro-name {
+    margin-top: -120px
+  }
+
+  header h1 {
+    font-size: xx-large;
+    font-weight: bold;
   }
 }
 
@@ -633,3 +710,59 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+/* Moto G4, Galaxy S5 */
+@media (width: 360px){
+  nav {
+    width: 360px;
+  }
+}
+
+/* Pixel 2, Pixel 2 XL */
+@media (width: 411px){
+  nav {
+    width: 411px;
+  }
+}
+
+/* iPhone 5 specifically */
+@media (width: 320px){
+  .intro-name {
+    margin-top: -120px;
+  }
+  header {
+    padding: 20% 10% 10% 10%;
+  }
+
+  nav {
+    width: 320px;
+  }
+}
+
+/* iPhone 6/7/8/X */
+@media (width: 375px){
+  nav {
+    width: 375px;
+  }
+}
+
+/* iPhone 6/7/8 Plus */
+@media (width: 414px){
+  nav {
+    width: 414px;
+  }
+}
+
+/* Surface Duo */
+@media (width: 450px){
+  nav {
+    width: 450px;
+  }
+}
+
+/* Galaxy Fold  */
+@media (width: 280px){
+  nav {
+    width: 280px;
+  }
+}
