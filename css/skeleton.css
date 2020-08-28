@@ -331,6 +331,9 @@ body {
   font-family: 'Raleway', sans-serif;
   color: #222; }
 
+html, body {
+  overflow-x: hidden;
+}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
