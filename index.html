@@ -76,7 +76,7 @@
             <li>React.js</li>
             <li>Quantum Mechanics</li>
           </ul>
-          <button class="resume-button">View Resume</button>
+          <a class="button" href="media/Resume_Aug2020.pdf" target="_blank">View Resume</a>
         </p>
       </div>
       <div class="one-third column faq" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200" data-aos-anchor="#faq">
@@ -225,20 +225,20 @@
     <div class="row" style="margin-bottom: 5%;">
       <h5>Let's get in touch.</h5>
     </div>
-    <form>
+    <form target="_blank" action="https://formsubmit.co/67ece1ca43875ff38c9dff480e166161" method="POST">
       <div class="row">
-        <div class="twelve columns">
-          <label for="exampleEmailInput">Your email</label>
-          <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+        <div class="six columns">
+          <label for="nameInput">Your name</label>
+          <input class="u-full-width" type="text" placeholder="Name" id="nameInput" required>
+        </div>
+        <div class="six columns">
+          <label for="emailInput">Your email</label>
+          <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="emailInput" required>
         </div>
       </div>
-      <label for="exampleMessage">Message</label>
-      <textarea class="u-full-width" placeholder="Hi Torie …" id="exampleMessage"></textarea>
-      <label class="example-send-yourself-copy">
-        <input type="checkbox">
-        <span class="label-body">Send a copy to yourself</span>
-      </label>
-      <input class="button-primary" type="submit" value="Submit">
+      <label for="message">Message</label>
+      <textarea class="u-full-width" placeholder="Hi Torie …" id="message" style="height: 150px;" required></textarea>
+      <button type="submit" class="button-primary">Send</button>
     </form>
 
   </div>
